@@ -3,8 +3,8 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :profiles {:dev {:dependencies [[org.clojure/clojure "1.7.0-alpha2"]]}}
-  :dependencies [[com.amazonaws/aws-java-sdk-core "1.9.28.1" :exclusions [commons-codec]]
-                 [com.amazonaws/aws-java-sdk-s3 "1.9.28.1" :exclusions [commons-codec]]
+  :dependencies [[com.amazonaws/aws-java-sdk-core "1.9.28.1" :exclusions [commons-codec joda-time]]
+                 [com.amazonaws/aws-java-sdk-s3 "1.9.28.1" :exclusions [commons-codec joda-time]]
                  [factual/durable-queue "0.1.4"]
                  [manifold "0.1.0-beta12"]
                  [org.clojure/tools.logging "0.3.1"]
